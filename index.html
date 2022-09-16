@@ -12,13 +12,17 @@
         *{
             font-family: 'Noto Sans KR', sans-serif;
         }
+        .bg{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -10;
+        }
         .main{
             margin-top: 0px;
-            background-image: url("https://firebasestorage.googleapis.com/v0/b/honeytip-park.appspot.com/o/images%2FJS.jpg?alt=media&token=c2199845-81ab-48b8-be0e-e66565438d45");
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            width: 350px;
+            
             height: 130vh;
         }
         .name_kr{
@@ -62,6 +66,9 @@
 </head>
 <body>
     <div class="main">
+        <div class="bg">
+            <img src="https://firebasestorage.googleapis.com/v0/b/honeytip-park.appspot.com/o/images%2FJS.jpg?alt=media&token=c2199845-81ab-48b8-be0e-e66565438d45">
+        </div>
         <p class="name_kr">박종성</p>
         <div class="tags">
             <a href="https://www.facebook.com/profile.php?id=100010257286945" class="facebook">
