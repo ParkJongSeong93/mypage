@@ -16,7 +16,9 @@
         .main{
             margin-top: 0px;
             background-image: url("https://firebasestorage.googleapis.com/v0/b/honeytip-park.appspot.com/o/images%2FJS.jpg?alt=media&token=c2199845-81ab-48b8-be0e-e66565438d45");
-            background-size: cover;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
             height: 130vh;
         }
         .name_kr{
@@ -47,11 +49,28 @@
             font-size: 15px;
             font-weight: 200;
         }
+        .tags{
+            display: flex;
+            flex-direction: row;
+            padding-left: 20px;
+            padding-top: 10px;
+        }
+        .insta{
+            padding-left: 10px;
+        }
     </style>
 </head>
 <body>
     <div class="main">
         <p class="name_kr">박종성</p>
+        <div class="tags">
+            <a href="https://www.facebook.com/profile.php?id=100010257286945" class="facebook">
+                <img src="http://www.mystic89.net/public/images/artists/contact/btn-fb.png" class="face">
+            </a>
+            <a href="https://www.instagram.com/pjsc0903/" class="instagram">
+                <img src="http://www.mystic89.net/public/images/artists/contact/btn-in.png" class="insta">
+            </a>
+        </div>
         <p class="name_en">JONGSEONG PARK</p>
     </div>
     <div class="copyright">JONGSEONG PARK. ALL RIGHTS RESERVED.</div>
